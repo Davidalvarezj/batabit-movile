@@ -1,0 +1,321 @@
+/*
+1. Posicionamiento
+2. modelo de Caja
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+:root{
+    /* Colores */
+    --bitcoin-orange:#F7931A;
+    --softh-orange: #FFE9D5;
+    --Secondary-blue:#1A9AF7;
+    --softh-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --warm-black-1:#282623;
+    --grey: #BABABA;
+    --of-white:#FAF8F7;
+    --just-white: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'DM Sans', sans-serif;
+
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    
+}
+.logo{
+    width:150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+.header-title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+.header-title-container h1{
+    color: var(--just-white);
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+
+
+}
+.header-title-container p{
+    color:var(--softh-orange);
+    font-weight:500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 25px;
+
+}
+.header-title-container .header-button{
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 15px;
+    padding-right: 40px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--of-white);
+    /*sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--warm-black);
+    font-weight: bold;
+}
+.arrow{
+position: absolute;
+display: inline-block;
+margin-left: 0px;
+height: 35px;
+width: 35px;
+padding-top: 0px;
+top:312px;
+right: calc(50% - 100px);
+}
+
+/* Main exchange container*/
+
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: var(--of-white);
+ 
+}
+
+.main-exchange-conteiner-tittle{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: auto;
+    
+}
+.main-exchange-container .backgroundimg{
+        width: 200px;
+        height: 200px;
+        margin:auto;
+        margin-bottom:30px;
+        margin-top: 0;
+        background-image: url(./img/Bitcoin.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+}
+.main-exchange-conteiner-tittle h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+.main-exchange-conteiner-tittle p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+    padding-top: 20px;
+}
+.main-currency-table{
+    width:70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+
+}
+.main-currency-table .currency-table-tittle {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color:var(--bitcoin-orange);
+    text-align: left;
+}
+.main-currency-table .currency-table-tittle2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color:var(--Secondary-blue);
+    text-align: left;
+}
+.currecny-table-container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: auto;
+    padding-bottom: 60px;
+
+}
+.currecny-table-container table{
+    width: 100%;
+    height: 100%;
+}
+.currecny-table-container td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+
+}
+.currecny-table-container .table__top-left {
+    border-radius: 10px 0 0 0;
+}
+.currecny-table-container .table__top-rigth{
+    border-radius: 0 10px 0 0;
+}
+.currecny-table-container .table__bottom-left{
+    border-radius: 0 0 0 10px;
+}
+.currecny-table-container .table_bottom-rigt{
+    border-radius: 0 0 10px 0;
+}
+.currecny-table-container .table__rigth{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.currecny-table-container .down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url(./img/trending-down1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currecny-table-container .up{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url(./img/trending-up1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-currency-table .currency-table-date{
+    width: 190px;
+    height: 30px;
+    margin: auto;
+    margin-top: 15px;
+    background-color:var(--softh-orange);
+    border-radius: 10px; 
+    padding: 8px;  
+}
+.main-currency-table .currency-table-date p, .currency-table-date2 p{
+    padding: 0px;
+    margin:0px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+}
+.main-currency-table .currency-table-date2{
+    width: 190px;
+    height: 30px;
+    margin: auto;
+    margin-top: 15px;
+    background-color:var(--softh-blue);
+    border-radius: 10px; 
+    padding: 8px;  
+}
+
+
+/* Product detail*/
+
+.main-product-detail{  
+    position:relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    background: var(--warm-black);
+    padding: 20px 10px;
+}
+.main-product-detail .icon{
+    position: absolute;
+    display: inline-block;
+    width: 38px;
+    height: 24px;
+    left:calc(50% - 19px);
+    top: -12px;
+    background-image:url("./img/Icono-Papa.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-product-detail .title-product-detail{  
+    padding-top: 60px;
+    width: 90%;
+    text-align: center;
+    align-self: center;
+    margin: auto;
+}
+.main-product-detail .title-product-detail h3{
+    color: var(--just-white);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    margin-bottom: 20px; 
+    font-weight: bold;
+}
+.main-product-detail .title-product-detail p{
+    color: #808080;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+}
+
+
+.main-product-detail .producto-detail-card{  
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    background: var(--warm-black-1);
+}
