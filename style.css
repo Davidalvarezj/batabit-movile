@@ -29,6 +29,8 @@ html{
     font-family: 'DM Sans', sans-serif;
 
 }
+
+/*----Inicio Proyecto------*/
 header{
     position: relative;
     display: flex;
@@ -85,7 +87,7 @@ header{
     width: 229px;
     height: 48px;
     background-color: var(--of-white);
-    /*sombra*/
+    /*sombra boton*/
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border: none;
     border-radius: 5px;
@@ -106,7 +108,7 @@ top:312px;
 right: calc(50% - 100px);
 }
 
-/* Main exchange container*/
+/* ---- Main exchange container ------*/
 
 .main-exchange-container{
     width: 100%;
@@ -261,7 +263,7 @@ right: calc(50% - 100px);
 }
 
 
-/* Product detail*/
+/* ----- Product detail------*/
 
 .main-product-detail{  
     position:relative;
@@ -307,15 +309,406 @@ right: calc(50% - 100px);
     font-weight: 500;
 }
 
-
-.main-product-detail .producto-detail-card{  
-    position:relative;
+.main-product-detail .product-cards-container{
     display: flex;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.producto-detail-card{  
+    background:var(--warm-black-1);
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+  
+
+}
+.producto-detail-card .producto-card-title{  
+    background:var(--warm-black-1);
+    color:var(--just-white);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.producto-detail-card .producto-card-body{  
+    background:var(--warm-black-1);
+    color: #808080;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+}
+.icon-time{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("./img/clock1.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon-eye{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./img/eye1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon-money{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("./img/dollar-sign1.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon-cheq{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("./img/check-circle1.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*---Imagen final---*/
+
+.end-image{
+    display:block;
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 387px;
+    text-align: center;
+    background: url("./img/img-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.end-image h4{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    padding-top: 60px;
+}
+/*----Seccion de planes----*/
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-color: var(--of-white);
+}
+.plans-tittle{
     width: 90%;
     min-width: 320px;
     height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+.plans-tittle h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+.plans-tittle p{
+    padding-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+    padding: 20px;
+}
+/*--Content inside card 1 ---*/
+.plans-container-card1{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 20px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow:0 4px 8px rgba(89, 73, 30, 0.16);
+
+}
+.recomended{
+    position:absolute;
+    display:block;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    font-size: 1.2rem;
+    line-height: 1.45rem;
     text-align: center;
-    background: var(--warm-black-1);
+    height: 30px;
+    width: 30%;
+    min-width: 100px;
+    max-width: 200px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 8px;
+    top:-15px;
+    left: calc(50% - 50px);
+}
+.plans-container-card1 .plan-card-title{
+    padding-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color:var(--warm-black);
+    padding-bottom: 20px;
+}
+.plans-container-card1 .plan-card-price{
+    padding-top: 0px;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    color:var(--warm-black);
+    padding-bottom: 20px;
+}
+.plans-container-card1 .plan-card-price span{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.45rem;
+    color:var(--warm-black);
+    top:70px;
+    left:calc(50% - 40px);
+}
+.plans-container-card1 .plan-card-saving{
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.45rem;
+    color:#757575;
+    padding-bottom: 20px;
+}
+.plans-container-card1 .plan-card-ca{
+    display:flex;
+    height: 40px;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.82rem;
+    color:var(--warm-black);
+    background-color: var(--of-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+.plans-container-card1 .plan-card-ca span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: #808080;
+    background-image: url("./img/arrow-right1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+/*--Content inside card 2 ---*/
+.plans-container-card2{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 20px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow:0 4px 8px rgba(89, 73, 30, 0.16);
+
+}
+
+.plans-container-card2 .plan-card-title{
+    padding-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color:var(--warm-black);
+    padding-bottom: 20px;
+}
+.plans-container-card2 .plan-card-price{
+    padding-top: 0px;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    color:var(--warm-black);
+    padding-bottom: 50px;
+}
+.plans-container-card2 .plan-card-price span{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.45rem;
+    color:var(--warm-black);
+    top:70px;
+    left:calc(50% - 40px);
+}
+.plans-container-card2 .plan-card-saving{
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.45rem;
+    color:#757575;
+    padding-bottom: 20px;
+}
+.plans-container-card2 .plan-card-ca{
+    display:flex;
+    height: 40px;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.82rem;
+    color:var(--warm-black);
+    background-color: var(--of-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+.plans-container-card2 .plan-card-ca span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: #808080;
+    background-image: url("./img/arrow-right1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+/*--Content inside card 3 ---*/
+.plans-container-card3{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 20px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow:0 4px 8px rgba(89, 73, 30, 0.16);
+
+}
+
+.plans-container-card3 .plan-card-title{
+    padding-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color:var(--warm-black);
+    padding-bottom: 20px;
+}
+.plans-container-card3 .plan-card-price{
+    padding-top: 0px;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    color:var(--warm-black);
+    padding-bottom: 50px;
+}
+.plans-container-card3 .plan-card-price span{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.45rem;
+    color:var(--warm-black);
+    top:70px;
+    left:calc(50% - 40px);
+}
+.plans-container-card3 .plan-card-saving{
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.45rem;
+    color:#757575;
+    padding-bottom: 20px;
+}
+.plans-container-card3 .plan-card-ca{
+    display:flex;
+    height: 40px;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.82rem;
+    color:var(--warm-black);
+    background-color: var(--of-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+.plans-container-card3 .plan-card-ca span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: #808080;
+    background-image: url("./img/arrow-right1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.plans-container-slider{
+    display: flex;
+    gap: 20px;
+    height: 316px;
+    overflow-x: scroll ;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+/*---- FOOTER------*/
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height:1.8rem;
+    list-style: none;
+}
+.left li{
+    margin: 10px 0;
+    text-decoration: none;
+}
+.left a{
+    color: var(--just-white);
+    text-decoration: none;
 }

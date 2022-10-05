@@ -1,0 +1,34 @@
+
+
+.main-tables-container{
+    display: flex;
+    flex-wrap:wrap ;
+    width: 930px;
+    margin: 0 auto;
+}
+.main-currency-table{
+    width:400px;
+}
+
+.product-cards-container{
+
+    flex-wrap: wrap;
+    width: 900px;
+    height: 350px;
+    align-content: center;
+
+
+
+}
+.producto-detail-card{
+    width: calc(50% - 20px);
+    max-width: 650px;
+
+}
+
+
+.plans-container-slider{
+    justify-content: center;
+    width: 930px;
+    margin: 0 auto;
+}
